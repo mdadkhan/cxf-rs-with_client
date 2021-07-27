@@ -1,0 +1,20 @@
+
+CXF-RS 3.2.4
+OpenAPI 3.0 
+
+Used employeesList.json file to create POJO to create and send it back as Response. (Bottom UP approach)
+jsonschema2pojo-maven-plugin to convert from json file to pojo object.
+
+----
+http://localhost:8080/api/v1/person/456
+----
+http://localhost:8080/api/v1/jsonperson/100
+----
+http://localhost:8080/api/openapi.json
+---
+
+----------
+Client:
+POST http://localhost:8080/api/v1/postemployee/ with employee json payload (using POSTMAN)
+HelloWorldServiceImpl will receive a JSON and invoke POST REST SERVICE (http://localhost:8080/api/v1/process/employee)
+thru HttpURLConnection
