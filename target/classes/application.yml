@@ -1,0 +1,10 @@
+# Spring MVC dispatcher servlet path. Needs to be different than CXF's to enable/disable Actuator endpoints access (/info, /health, ...)
+server:
+#   servlet-path: /
+   port: 8080
+
+cxf:
+  path: /api # CXFServlet URL pattern
+  jaxrs:
+    component-scan: true
+
